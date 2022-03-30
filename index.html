@@ -114,6 +114,19 @@
                             placeholder="Masukkan no telepon Anda" onkeypress="return isNumberKey(event)"
                             autocomplete="off" required>
                     </div>
+                    <div class="mb-3">
+                        <label for="keberangkatan"
+                            class="block mb-2 text-sm text-gray-600 dark:text-white after:content-['*'] after:ml-0.5 after:text-red-500">
+                            Keberangkatan
+                        </label>
+                        <select name="keberangkatan" id="keberangkatan"
+                            class="block w-full px-4 py-2 text-sm text-gray-700 border border-gray-300 rounded-lg focus:ring-cyan-700 focus:outline-none focus:ring focus:ring-opacity-40 dark:bg-zinc-800 dark:border-zinc-800 dark:text-white"
+                            required>
+                            <option value="" disabled selected hidden>-- Pilih salah satu --</option>
+                            <option value="Sendiri">Sendiri</option>
+                            <option value="Rombongan">Rombongan</option>
+                        </select>
+                    </div>
                     <input type="hidden" name="sum" id="sum" value="1">
                     <button type="submit" id="btnSubmit"
                         class="w-full py-2 text-white transition duration-300 rounded-lg disabled:opacity-70 disabled:cursor-not-allowed bg-cyan-700 hover:bg-cyan-800">
