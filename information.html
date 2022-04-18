@@ -37,48 +37,22 @@
         </button>
     </div>
 
-    <div class="min-h-screen">
-        <div class="container px-4 pt-10 pb-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 md:py-0">
-            <div class="flex flex-col items-center justify-center md:justify-between h-screen lg:flex-row">
-                <div class="flex flex-col justify-center">
-                    <div class="max-w-lg mb-10">
-                        <h2
-                            class="font-sans text-3xl font-bold text-center text-gray-700 select-none md:text-left md:text-6xl dark:text-white">
-                            Ijtima Wilayah <span class="underline text-cyan-700 underline-offset-4">Markaz</span>
-                            2022
-                        </h2>
-                        <p
-                            class="max-w-md px-2 mt-2 mb-4 md:mb-6 text-xs text-center text-gray-500 md:mt-6 md:text-base md:text-left md:px-0 dark:text-gray-400">
-                            Ijtima akan dilaksanakan pada bulan Mei 2022 dengan mengusung tema "Mempererat
-                            Persaudaraan".
-                            <br>
-                            Partisipasimu sangat dinantikan lho!
-                            <br>
-                            Pendaftaran dibuka sampai tanggal 18 Mei 2022
-                        </p>
-                        <div class="text-center md:text-left space-x-2">
-                            <a href="information.html"
-                                class="tracking-wide transition duration-300 text-xs md:text-base focus:ring-2 w-full px-5 py-2 font-medium text-cyan-700 border rounded-lg border-cyan-700 bg-transparent hover:bg-cyan-700 hover:text-white">
-                                Informasi
-                            </a>
-                            <a href="register.html"
-                                class="tracking-wide transition duration-300 text-xs md:text-base focus:ring-2 w-full px-5 py-2 font-medium text-white border rounded-lg border-cyan-700 bg-cyan-700 hover:bg-cyan-800">
-                                Daftar Sekarang
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center justify-center">
-                    <div class="flex flex-col items-end px-3">
-                        <img class="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-                            src="asset/img/3.jpg" alt="image" />
-                        <img class="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-                            src="asset/img/2.jpg" alt="image" />
-                    </div>
-                    <div class="px-3">
-                        <img class="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-                            src="asset/img/1.jpg" alt="image" />
-                    </div>
+    <div class="min-h-0">
+        <div class="container px-4 pt-10 pb-10 md:pt-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24">
+            <div class="flex flex-col items-center justify-center h-auto lg:flex-row">
+                <div class="w-full mx-auto max-w-md pt-6 pb-5 text-center">
+                    <h2
+                        class="text-3xl mb-4 md:mb-6 font-bold tracking-tight text-center text-gray-600 md:text-4xl dark:text-white">
+                        Informasi
+                    </h2>
+                    <p class="text-xs text-center text-gray-500 md:mt-6 md:text-base dark:text-gray-400">
+                        Tata Tertib dan Barang Bawaan Peserta Ijtima Wilayah Markaz
+                    </p>
+                    <p class="text-xs text-center text-gray-500 md:mt-6 md:text-base dark:text-gray-400">
+                        Informasi tata tertib dan barang bawaan peserta Ijtima Wilayah Markaz akan diupdate, silahkan
+                        cek
+                        link ini secara berkala untuk informasi lebih lanjut.
+                    </p>
                 </div>
             </div>
         </div>
@@ -135,6 +109,13 @@
             }
 
         });
+
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : evt.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
     </script>
 </body>
 
